@@ -7,7 +7,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   title: sushiServiceData.seo.title,
   description: sushiServiceData.seo.description,
-  keywords: sushiServiceData.seo.keywords,
+  keywords: [...sushiServiceData.seo.keywords],
   openGraph: {
     title: sushiServiceData.seo.title,
     description: sushiServiceData.seo.description,
