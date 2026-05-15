@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${sushiServiceData.business.name}`,
   },
   description: sushiServiceData.seo.description,
-  keywords: sushiServiceData.seo.keywords,
+  keywords: [...sushiServiceData.seo.keywords],
   openGraph: {
     title: sushiServiceData.seo.title,
     description: sushiServiceData.seo.description,
